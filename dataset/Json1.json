@@ -1,0 +1,19 @@
+{
+	"name": "Json1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Azuregeotest",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "json code.docx",
+				"container": "ger"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,16 @@
+{
+	"name": "SourceDataset_9zz",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage3",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureBlob",
+		"typeProperties": {
+			"fileName": "",
+			"folderPath": "insights-logs-auditlogs"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

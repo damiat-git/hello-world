@@ -1,0 +1,12 @@
+{
+	"name": "integrationRuntime4",
+	"properties": {
+		"type": "SelfHosted",
+		"typeProperties": {
+			"linkedInfo": {
+				"resourceId": "/subscriptions/6bfb88db-92a9-4e0e-969f-da7eca23e6c2/resourcegroups/a-damiat/providers/Microsoft.DataFactory/factories/adf-a-damiat-france/integrationruntimes/irFRANCE",
+				"authorizationType": "Rbac"
+			}
+		}
+	}
+}

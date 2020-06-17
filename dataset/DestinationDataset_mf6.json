@@ -1,0 +1,19 @@
+{
+	"name": "DestinationDataset_mf6",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Blobstorage2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureBlob",
+		"typeProperties": {
+			"fileName": "",
+			"folderPath": {
+				"value": "@utcnow('ddMMyy')",
+				"type": "Expression"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

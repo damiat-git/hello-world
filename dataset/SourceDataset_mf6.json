@@ -1,0 +1,22 @@
+{
+	"name": "SourceDataset_mf6",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Blobstorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureBlob",
+		"structure": [
+			{
+				"name": "Prop_0",
+				"type": "String"
+			}
+		],
+		"typeProperties": {
+			"fileName": "",
+			"folderPath": "blob1"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,37 @@
+{
+	"name": "SourceDataset_3va",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureBlob",
+		"structure": [
+			{
+				"name": "Prop_0",
+				"type": "String"
+			},
+			{
+				"name": "Prop_1",
+				"type": "String"
+			}
+		],
+		"typeProperties": {
+			"format": {
+				"type": "TextFormat",
+				"columnDelimiter": " ",
+				"rowDelimiter": "",
+				"quoteChar": "\"",
+				"nullValue": "\\N",
+				"encodingName": null,
+				"treatEmptyAsNull": true,
+				"skipLineCount": 0,
+				"firstRowAsHeader": false
+			},
+			"fileName": "newtest.txt",
+			"folderPath": "a-damiat"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

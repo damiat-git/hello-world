@@ -1,0 +1,16 @@
+{
+	"name": "DestinationDataset_9zz",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Blobstorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureBlob",
+		"typeProperties": {
+			"fileName": "",
+			"folderPath": "blob1"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

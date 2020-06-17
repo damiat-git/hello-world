@@ -1,0 +1,30 @@
+{
+	"name": "event1",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "dani_luni",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"FolderPath": "@triggerBody().FolderPath",
+					"FileName": "@triggerBody().fileName",
+					"OutputContainer": "outboundexports"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/newcontainer/blobs/",
+			"ignoreEmptyBlobs": false,
+			"scope": "/subscriptions/6bfb88db-92a9-4e0e-969f-da7eca23e6c2/resourceGroups/a-damiat/providers/Microsoft.Storage/storageAccounts/adamiatstorage",
+			"events": [
+				"Microsoft.Storage.BlobCreated",
+				"Microsoft.Storage.BlobDeleted"
+			]
+		}
+	}
+}

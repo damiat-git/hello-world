@@ -1,0 +1,20 @@
+{
+	"name": "AzureBlob1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureBlob",
+		"typeProperties": {
+			"format": {
+				"type": "JsonFormat",
+				"filePattern": "arrayOfObjects"
+			},
+			"fileName": "ger.json",
+			"folderPath": "blob1"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

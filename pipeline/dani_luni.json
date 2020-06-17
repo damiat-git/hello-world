@@ -1,0 +1,67 @@
+{
+	"name": "dani_luni",
+	"properties": {
+		"activities": [
+			{
+				"name": "Copy_ef1",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [
+					{
+						"name": "Source",
+						"value": "blob1/powerbi_adf.txt"
+					},
+					{
+						"name": "Destination",
+						"value": "newcontainer/"
+					}
+				],
+				"typeProperties": {
+					"source": {
+						"type": "BlobSource",
+						"recursive": false
+					},
+					"sink": {
+						"type": "BlobSink"
+					},
+					"enableStaging": false
+				},
+				"inputs": [
+					{
+						"referenceName": "SourceDataset_uxv",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "DestinationDataset_ef1",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"parameters": {
+			"FolderPath": {
+				"type": "string",
+				"defaultValue": "@triggerBody().folderPath"
+			},
+			"FileName": {
+				"type": "string",
+				"defaultValue": "@triggerBody().FileName"
+			},
+			"OutputContainer": {
+				"type": "string",
+				"defaultValue": "outboundexports"
+			}
+		},
+		"annotations": []
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

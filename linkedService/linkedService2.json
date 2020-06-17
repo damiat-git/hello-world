@@ -1,0 +1,16 @@
+{
+	"name": "linkedService2",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=False;data source=10.164.15.198,1433;initial catalog=database1;user id=dani",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiIwZjgxNzMxMS01NzAyLTQxZWEtYTk5ZS1iNDgzMmVhZjc4NTYiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "integrationRuntime3",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

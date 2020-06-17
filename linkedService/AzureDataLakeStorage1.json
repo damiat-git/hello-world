@@ -1,0 +1,23 @@
+{
+	"name": "AzureDataLakeStorage1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://adamiatstorage.dfs.core.windows.net",
+			"accountKey": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault1",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "test3kv"
+			}
+		},
+		"connectVia": {
+			"referenceName": "integrationRuntime7",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

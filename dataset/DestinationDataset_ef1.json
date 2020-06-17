@@ -1,0 +1,25 @@
+{
+	"name": "DestinationDataset_ef1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage9",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureBlob",
+		"typeProperties": {
+			"format": {
+				"type": "TextFormat",
+				"columnDelimiter": ",",
+				"rowDelimiter": "",
+				"nullValue": "\\N",
+				"treatEmptyAsNull": true,
+				"skipLineCount": 0,
+				"firstRowAsHeader": false
+			},
+			"fileName": "",
+			"folderPath": "newcontainer"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

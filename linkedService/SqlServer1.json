@@ -1,0 +1,16 @@
+{
+	"name": "SqlServer1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=False;data source=a-damiat.database.windows.net;initial catalog=damiat;user id=a-damiat",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI4ZmM0ODA3Ni0zYWM3LTRmNzYtOTg3Yi1hMDY1ODM1NTAzYTQiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "integrationRuntime4",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

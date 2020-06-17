@@ -1,0 +1,213 @@
+{
+	"name": "Parquet3",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "linkedService3",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "container1"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "PERSONNAME",
+				"type": "UTF8"
+			},
+			{
+				"name": "DEFINITIONGROUP",
+				"type": "UTF8"
+			},
+			{
+				"name": "EXECUTIONID",
+				"type": "UTF8"
+			},
+			{
+				"name": "ISSELECTED",
+				"type": "INT32"
+			},
+			{
+				"name": "TRANSFERSTATUS",
+				"type": "INT32"
+			},
+			{
+				"name": "DEFAULTCOUNTRYREGION",
+				"type": "UTF8"
+			},
+			{
+				"name": "DOCUMENTHANDLINGACTIVE",
+				"type": "INT32"
+			},
+			{
+				"name": "SHOWATTACHMENTSTATUS",
+				"type": "INT32"
+			},
+			{
+				"name": "EMAIL",
+				"type": "UTF8"
+			},
+			{
+				"name": "SENDALERTASEMAILMESSAGE",
+				"type": "INT32"
+			},
+			{
+				"name": "EVENTPOLLFREQUENCY",
+				"type": "INT32"
+			},
+			{
+				"name": "EVENTPOPUPDISPLAYWHEN",
+				"type": "INT32"
+			},
+			{
+				"name": "EVENTPOPUPLINKDESTINATION",
+				"type": "INT32"
+			},
+			{
+				"name": "EVENTPOPUPS",
+				"type": "INT32"
+			},
+			{
+				"name": "EVENTWORKFLOWSHOWPOPUP",
+				"type": "INT32"
+			},
+			{
+				"name": "SHOWNOTIFICATIONSINTHEMICROSOFTDYNAMICSAX7CLIENT",
+				"type": "INT32"
+			},
+			{
+				"name": "SENDNOTIFICATIONSINEMAIL",
+				"type": "INT32"
+			},
+			{
+				"name": "MARKEMPTYLINKS",
+				"type": "INT32"
+			},
+			{
+				"name": "USERID",
+				"type": "UTF8"
+			},
+			{
+				"name": "LANGUAGE",
+				"type": "UTF8"
+			},
+			{
+				"name": "SQMENABLED",
+				"type": "INT32"
+			},
+			{
+				"name": "SQMGUID",
+				"type": "UTF8"
+			},
+			{
+				"name": "WORKFLOWLINEITEMNOTIFICATIONFORMAT",
+				"type": "INT32"
+			},
+			{
+				"name": "DENSITY",
+				"type": "INT32"
+			},
+			{
+				"name": "THEME",
+				"type": "INT32"
+			},
+			{
+				"name": "STARTPAGE",
+				"type": "UTF8"
+			},
+			{
+				"name": "EMAILPROVIDERID",
+				"type": "UTF8"
+			},
+			{
+				"name": "USERNAME",
+				"type": "UTF8"
+			},
+			{
+				"name": "ENABLED",
+				"type": "INT32"
+			},
+			{
+				"name": "COMPANY",
+				"type": "UTF8"
+			},
+			{
+				"name": "AUTOLOGOFF",
+				"type": "INT32"
+			},
+			{
+				"name": "NETWORKDOMAIN",
+				"type": "UTF8"
+			},
+			{
+				"name": "ALIAS",
+				"type": "UTF8"
+			},
+			{
+				"name": "EXTERNALUSER",
+				"type": "INT32"
+			},
+			{
+				"name": "USERINFO_LANGUAGE",
+				"type": "UTF8"
+			},
+			{
+				"name": "HELPLANGUAGE",
+				"type": "UTF8"
+			},
+			{
+				"name": "PREFERREDTIMEZONE",
+				"type": "INT32"
+			},
+			{
+				"name": "PREFERREDCALENDAR",
+				"type": "INT32"
+			},
+			{
+				"name": "HOMEPAGEREFRESHDURATION",
+				"type": "INT32"
+			},
+			{
+				"name": "GLOBALLISTPAGELINKMODE",
+				"type": "INT32"
+			},
+			{
+				"name": "GLOBALEXCELEXPORTMODE",
+				"type": "INT32"
+			},
+			{
+				"name": "USERINFO_DEFAULTPARTITION",
+				"type": "INT32"
+			},
+			{
+				"name": "GLOBALEXCELEXPORTFILEPATH",
+				"type": "UTF8"
+			},
+			{
+				"name": "PREFERREDLOCALE",
+				"type": "UTF8"
+			},
+			{
+				"name": "ACCOUNTTYPE",
+				"type": "INT32"
+			},
+			{
+				"name": "AUTOMATICURLUPDATE",
+				"type": "INT32"
+			},
+			{
+				"name": "PARTITION",
+				"type": "UTF8"
+			},
+			{
+				"name": "SYNCSTARTDATETIME",
+				"type": "INT96"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

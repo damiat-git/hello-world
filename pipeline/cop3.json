@@ -1,0 +1,53 @@
+{
+	"name": "cop3",
+	"properties": {
+		"activities": [
+			{
+				"name": "Copy_mf6",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [
+					{
+						"name": "Source",
+						"value": "blbo2/1.txt"
+					},
+					{
+						"name": "Destination",
+						"value": "backup2/"
+					}
+				],
+				"typeProperties": {
+					"source": {
+						"type": "BlobSource",
+						"recursive": false
+					},
+					"sink": {
+						"type": "BlobSink"
+					},
+					"enableStaging": false
+				},
+				"inputs": [
+					{
+						"referenceName": "SourceDataset_mf6",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "DestinationDataset_mf6",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"annotations": []
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

@@ -1,0 +1,26 @@
+{
+	"name": "AzureSqlMITable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlMI1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlMITable",
+		"schema": [
+			{
+				"name": "saptamana",
+				"type": "varchar"
+			},
+			{
+				"name": "luna",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "NEW_HDI_TEST"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
